@@ -17,7 +17,7 @@ Display utility classes that apply to all [breakpoints]({{< docsref "/layout/bre
 As such, the classes are named using the format:
 
 * `.d-{value}` for `xs`
-* `.d-{breakpoint}-{value}` for `sm`, `md`, `lg`, `xl` and `xxl`.
+* `.d-{breakpoint}-{value}` for `sm`, `md`, `lg`, `xl`, and `xxl`.
 
 Where *value* is one of:
 
