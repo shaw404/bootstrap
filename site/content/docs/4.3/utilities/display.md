@@ -51,9 +51,9 @@ The media queries effect screen widths with the given breakpoint *or larger*. Fo
 
 For faster mobile-friendly development, use responsive display classes for showing and hiding elements by device. Avoid creating entirely different versions of the same site, instead hide elements responsively for each screen size.
 
-To hide elements simply use the `.d-none` class or one of the `.d-{sm,md,lg,xl}-none` classes for any responsive screen variation.
+To hide elements simply use the `.d-none` class or one of the `.d-{sm,md,lg,xl,xxl}-none` classes for any responsive screen variation.
 
-To show an element only on a given interval of screen sizes you can combine one `.d-*-none` class with a `.d-*-*` class, for example `.d-none .d-md-block .d-xl-none` will hide the element for all screen sizes except on medium and large devices.
+To show an element only on a given interval of screen sizes you can combine one `.d-*-none` class with a `.d-*-*` class, for example `.d-none .d-md-block .d-xl-none .d-xxl-none` will hide the element for all screen sizes except on medium and large devices.
 
 <table class="table">
   <thead>
@@ -88,6 +88,10 @@ To show an element only on a given interval of screen sizes you can combine one 
       <td><code>.d-xl-none</code></td>
     </tr>
     <tr>
+      <td>Hidden only on xxl</td>
+      <td><code>.d-xxl-none</code></td>
+    </tr>
+    <tr>
       <td>Visible on all</td>
       <td><code>.d-block</code></td>
     </tr>
@@ -109,7 +113,11 @@ To show an element only on a given interval of screen sizes you can combine one 
     </tr>
     <tr>
       <td>Visible only on xl</td>
-      <td><code>.d-none .d-xl-block</code></td>
+      <td><code>.d-none .d-xl-block .d-xxl-none</code></td>
+    </tr>
+    <tr>
+      <td>Visible only on xxl</td>
+      <td><code>.d-none .d-xxl-block</code></td>
     </tr>
   </tbody>
 </table>
